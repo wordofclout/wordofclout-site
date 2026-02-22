@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Word of Clout — Next-generation AI tools for the creator economy. Building the future of content creation and digital business.">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="creator economy, AI tools, content creation, creator tools, digital business, Word of Clout, Miami tech startup">
+    <title>Word of Clout — Next-Gen Tools for the Creator Economy</title>
+    
+    <link rel="canonical" href="https://wordofclout.com/">
+    
+    <meta property="og:title" content="Word of Clout — Next-Gen Creator Tools">
+    <meta property="og:description" content="Building the future of the $300B creator economy. AI-powered tools that actually work.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wordofclout.com">
+    <meta property="og:image" content="https://wordofclout.com/og-image.png">
+    <meta property="og:site_name" content="Word of Clout">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@wordofclout">
+    <meta name="twitter:title" content="Word of Clout — Next-Gen Creator Tools">
+    <meta name="twitter:description" content="Building the future of the $300B creator economy.">
+    <meta name="twitter:image" content="https://wordofclout.com/og-image.png">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◼</text></svg>">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Organization", "LocalBusiness"],
+      "@id": "https://wordofclout.com/#organization",
+      "name": "Word of Clout, LLC",
+      "url": "https://wordofclout.com",
+      "logo": "https://wordofclout.com/og-image.png",
+      "description": "Next-generation AI tools for the creator economy and digital businesses.",
+      "foundingDate": "2024",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Miami",
+        "addressRegion": "FL",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://twitter.com/wordofclout",
+        "https://instagram.com/wordofclout",
+        "https://tiktok.com/@wordofclout"
+      ],
+      "knowsAbout": ["Creator Economy", "Artificial Intelligence", "Content Creation", "Digital Marketing"]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --grey-50: #fafafa;
+            --grey-100: #f5f5f5;
+            --grey-200: #e5e5e5;
+            --grey-400: #a3a3a3;
+            --grey-600: #525252;
+        }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background: var(--white);
+            color: var(--black);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+        ::selection { background: var(--black); color: var(--white); }
+        
+        /* Layout */
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        
+        /* Header */
+        header {
+            padding: 32px 0;
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            z-index: 100;
+            border-bottom: 1px solid var(--grey-200);
+        }
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--black);
+        }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--grey-600);
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active { color: var(--black); }
+        
+        /* Hero */
+        .hero {
+            padding: 100px 0 80px;
+        }
+        .hero h1 {
+            font-size: clamp(2.5rem, 7vw, 4.5rem);
+            font-weight: 600;
+            line-height: 1.05;
+            letter-spacing: -0.03em;
+            margin-bottom: 32px;
+        }
+        .hero-sub {
+            font-size: 1.1rem;
+            color: var(--grey-600);
+            max-width: 560px;
+            line-height: 1.7;
+        }
+        .hero-stat {
+            display: inline-block;
+            margin-top: 48px;
+            padding: 12px 20px;
+            background: var(--grey-100);
+            font-size: 0.8rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+        
+        /* Sections */
+        section { padding: 80px 0; border-top: 1px solid var(--grey-200); }
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 40px;
+        }
+        .section-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--grey-400);
+        }
+        .section-link {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--black);
+            text-decoration: none;
+            letter-spacing: 0.05em;
+        }
+        .section-link:hover { text-decoration: underline; }
+        
+        /* What We Do */
+        .what-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 48px;
+        }
+        @media (min-width: 700px) {
+            .what-grid { grid-template-columns: 1fr 1fr; }
+        }
+        .what-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: -0.01em;
+        }
+        .what-item p {
+            font-size: 0.9rem;
+            color: var(--grey-600);
+            line-height: 1.7;
+        }
+        
+        /* Products */
+        .product-card {
+            display: block;
+            padding: 32px;
+            background: var(--grey-50);
+            border: 1px solid var(--grey-200);
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, background 0.2s;
+            margin-bottom: 16px;
+        }
+        .product-card:hover {
+            border-color: var(--black);
+            background: var(--white);
+        }
+        .product-card:last-child { margin-bottom: 0; }
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-name::after {
+            content: '→';
+            font-size: 1.2rem;
+            opacity: 0.4;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+        .product-card:hover .product-name::after {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--grey-600);
+            line-height: 1.6;
+        }
+        
+        /* Insights */
+        .insights-intro {
+            font-size: 1rem;
+            color: var(--grey-600);
+            max-width: 600px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+        }
+        .insight-card {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--grey-200);
+        }
+        .insight-card:first-child { border-top: 1px solid var(--grey-200); }
+        .insight-meta {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--grey-400);
+            margin-bottom: 8px;
+        }
+        .insight-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--black);
+            text-decoration: none;
+            line-height: 1.4;
+        }
+        .insight-title:hover { text-decoration: underline; }
+        
+        /* Contact */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 40px;
+        }
+        .contact-item .label {
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--grey-400);
+            margin-bottom: 12px;
+        }
+        .contact-item a {
+            font-size: 0.9rem;
+            color: var(--black);
+            text-decoration: none;
+        }
+        .contact-item a:hover { text-decoration: underline; }
+        .social-links { display: flex; flex-wrap: wrap; gap: 20px; }
+        .social-links a {
+            font-size: 0.85rem;
+            color: var(--grey-600);
+        }
+        .social-links a:hover { color: var(--black); }
+        
+        /* Footer */
+        footer {
+            margin-top: auto;
+            padding: 40px 0;
+            border-top: 1px solid var(--grey-200);
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        .copyright {
+            font-size: 0.7rem;
+            color: var(--grey-400);
+            letter-spacing: 0.05em;
+        }
+        .status {
+            font-size: 0.7rem;
+            color: var(--grey-400);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: #22c55e;
+            border-radius: 50%;
+        }
+        
+        @media (max-width: 600px) {
+            header { padding: 24px 0; }
+            nav { gap: 20px; }
+            .hero { padding: 60px 0 50px; }
+            section { padding: 50px 0; }
+            .footer-inner { flex-direction: column; align-items: flex-start; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">Word Of Clout®</a>
+                <nav>
+                    <a href="/">About</a>
+                    <a href="#products">Products</a>
+                    <a href="/knowledge">Knowledge</a>
+                    <a href="/store">Store</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>The Future of<br>Content Creation<br>Starts Here</h1>
+                <p class="hero-sub">We build AI-powered tools for creators, entrepreneurs, and local businesses navigating the new digital economy. What works today won't work tomorrow — we're building what comes next.</p>
+                <div class="hero-stat">The creator economy is projected to reach $480B by 2027</div>
+            </div>
+        </section>
+        
+        <section id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">What We Do</h2>
+                </div>
+                <div class="what-grid">
+                    <div class="what-item">
+                        <h3>Tools That Ship</h3>
+                        <p>We don't build demos. Every product we release solves a real problem for real people — creators who need to produce more with less, businesses that need to reach customers without bloated teams.</p>
+                    </div>
+                    <div class="what-item">
+                        <h3>Research That Matters</h3>
+                        <p>We study where the creator economy is heading — not where it's been. Our insights track emerging platforms, shifting algorithms, and the technology that will define the next decade of digital business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="products">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Products</h2>
+                    <a href="#products" class="section-link">View all</a>
+                </div>
+                <a href="https://ripurpose.ai" class="product-card" target="_blank" rel="noopener">
+                    <div class="product-name">RipurposeAI</div>
+                    <p class="product-desc">Turn one YouTube video into 30 days of content. LinkedIn posts, X threads, TikTok scripts — written in your voice, not a robot's.</p>
+                </a>
+            </div>
+        </section>
+        
+        <section id="insights">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Insights</h2>
+                    <a href="#insights" class="section-link">View all</a>
+                </div>
+                <p class="insights-intro">Trends, analysis, and forecasts on content creation, AI, and the digital economy. We look 6–12 months ahead so you can move first.</p>
+                <div class="insight-card">
+                    <div class="insight-meta">Coming Soon</div>
+                    <a href="#" class="insight-title">Why 2027 Will Be the Year of the AI-Native Creator</a>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-meta">Coming Soon</div>
+                    <a href="#" class="insight-title">The Local Business Playbook: Digital Marketing in 2026</a>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-meta">Coming Soon</div>
+                    <a href="#" class="insight-title">Platform Shifts: Where Attention Is Moving Next</a>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="label">Email</div>
+                        <a href="mailto:hello@wordofclout.com">hello@wordofclout.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Social</div>
+                        <div class="social-links">
+                            <a href="https://twitter.com/wordofclout" target="_blank" rel="noopener">Twitter</a>
+                            <a href="https://instagram.com/wordofclout" target="_blank" rel="noopener">Instagram</a>
+                            <a href="https://tiktok.com/@wordofclout" target="_blank" rel="noopener">TikTok</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="label">Location</div>
+                        <span style="font-size: 0.9rem; color: var(--grey-600);">Miami, FL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="copyright">© 2026 Word Of Clout, LLC · Word Of Clout® is a registered trademark of Word Of Clout, LLC</div>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    Building the future
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

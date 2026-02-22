@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    { "source": "/store", "destination": "/store/index.html" },
+    { "source": "/insights", "destination": "/insights/index.html" },
+    { "source": "/knowledge", "destination": "/knowledge/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/api-knowledge/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Word of Clout Insights — Trends, analysis, and forecasts on the creator economy, AI, and digital business. We look 6-12 months ahead.">
+    <meta name="robots" content="index, follow">
+    <title>Insights — Word of Clout | Creator Economy Trends & Analysis</title>
+    
+    <link rel="canonical" href="https://wordofclout.com/insights">
+    
+    <meta property="og:title" content="Word of Clout Insights">
+    <meta property="og:description" content="Trends, analysis, and forecasts on the creator economy. We look 6-12 months ahead.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://wordofclout.com/insights">
+    <meta property="og:site_name" content="Word of Clout">
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◼</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --white: #ffffff;
+            --black: #000000;
+            --grey-100: #f5f5f5;
+            --grey-200: #e5e5e5;
+            --grey-400: #a3a3a3;
+            --grey-600: #525252;
+        }
+        html { font-size: 16px; }
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background: var(--white);
+            color: var(--black);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.6;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 0 24px; width: 100%; }
+        
+        header {
+            padding: 32px 0;
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            z-index: 100;
+            border-bottom: 1px solid var(--grey-200);
+        }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; }
+        .logo {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--black);
+        }
+        nav { display: flex; gap: 32px; }
+        nav a {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: var(--grey-600);
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active { color: var(--black); }
+        
+        .hero {
+            padding: 80px 0 60px;
+            border-bottom: 1px solid var(--grey-200);
+        }
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1rem;
+            color: var(--grey-600);
+            max-width: 600px;
+            line-height: 1.7;
+        }
+        
+        .content { padding: 60px 0; }
+        .coming-soon {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .coming-soon-icon {
+            font-size: 3rem;
+            margin-bottom: 24px;
+            opacity: 0.3;
+        }
+        .coming-soon h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        .coming-soon p {
+            font-size: 0.9rem;
+            color: var(--grey-600);
+            max-width: 400px;
+            margin: 0 auto 32px;
+            line-height: 1.6;
+        }
+        .notify-form {
+            display: flex;
+            max-width: 400px;
+            margin: 0 auto;
+            gap: 0;
+        }
+        .notify-input {
+            flex: 1;
+            background: transparent;
+            border: 1px solid var(--grey-200);
+            border-right: none;
+            padding: 12px 16px;
+            font-family: inherit;
+            font-size: 0.85rem;
+        }
+        .notify-input:focus { outline: none; border-color: var(--black); }
+        .notify-btn {
+            background: var(--black);
+            color: var(--white);
+            border: 1px solid var(--black);
+            padding: 12px 24px;
+            font-family: inherit;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .notify-btn:hover {
+            background: var(--white);
+            color: var(--black);
+        }
+        
+        .topics {
+            padding: 60px 0;
+            border-top: 1px solid var(--grey-200);
+        }
+        .topics-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--grey-400);
+            margin-bottom: 24px;
+        }
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 24px;
+        }
+        .topic-card {
+            padding: 20px;
+            background: var(--grey-100);
+        }
+        .topic-card h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .topic-card p {
+            font-size: 0.8rem;
+            color: var(--grey-600);
+            line-height: 1.5;
+        }
+        
+        footer {
+            margin-top: auto;
+            padding: 40px 0;
+            border-top: 1px solid var(--grey-200);
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .copyright { font-size: 0.7rem; color: var(--grey-400); }
+        .back-link {
+            font-size: 0.75rem;
+            color: var(--grey-600);
+            text-decoration: none;
+        }
+        .back-link:hover { color: var(--black); }
+        
+        @media (max-width: 600px) {
+            nav { gap: 20px; }
+            .hero { padding: 50px 0 40px; }
+            .notify-form { flex-direction: column; }
+            .notify-input { border-right: 1px solid var(--grey-200); border-bottom: none; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-inner">
+                <a href="/" class="logo">Word Of Clout®</a>
+                <nav>
+                    <a href="/">About</a>
+                    <a href="/#products">Products</a>
+                    <a href="/insights" class="active">Insights</a>
+                    <a href="/store">Store</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Insights</h1>
+                <p>Trends, analysis, and forecasts on content creation, AI, and the digital economy. We look 6–12 months ahead so you can move first.</p>
+            </div>
+        </section>
+        
+        <section class="content">
+            <div class="container">
+                <div class="coming-soon">
+                    <div class="coming-soon-icon">◼</div>
+                    <h2>Launching Soon</h2>
+                    <p>We're preparing our first wave of insights. Get notified when we publish.</p>
+                    <form class="notify-form" id="notify-form">
+                        <input type="email" class="notify-input" placeholder="your@email.com" required>
+                        <button type="submit" class="notify-btn">Notify Me</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <section class="topics">
+            <div class="container">
+                <h2 class="topics-title">Topics We Cover</h2>
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <h3>Creator Economy</h3>
+                        <p>Platform shifts, monetization trends, and what's working now.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h3>AI & Automation</h3>
+                        <p>How artificial intelligence is reshaping content creation.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h3>Local Business</h3>
+                        <p>Digital marketing strategies for service businesses.</p>
+                    </div>
+                    <div class="topic-card">
+                        <h3>Platform Analysis</h3>
+                        <p>Deep dives on YouTube, TikTok, LinkedIn, and emerging players.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="copyright">© 2026 Word Of Clout, LLC · Word Of Clout® is a registered trademark of Word Of Clout, LLC</div>
+                <a href="/" class="back-link">← Back to Home</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('notify-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('input').value;
+            const btn = e.target.querySelector('button');
+            btn.textContent = '...';
+            try {
+                await fetch('/api/subscribe', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email })
+                });
+                e.target.innerHTML = '<span style="font-size: 0.9rem; font-weight: 600;">You\'re on the list.</span>';
+            } catch (err) {
+                btn.textContent = 'Try again';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://wordofclout.com/#organization",
+      "name": "Word Of Clout",
+      "legalName": "Word Of Clout, LLC",
+      "url": "https://wordofclout.com",
+      "logo": "https://wordofclout.com/logo.png",
+      "description": "Building AI-powered tools for creators and local businesses. We destroy bottlenecks with software that does one thing at an elite level.",
+      "foundingDate": "2024",
+      "founder": {
+        "@type": "Person",
+        "name": "Talus",
+        "jobTitle": "Founder & CEO"
+      },
+      "slogan": "Where influence meets innovation",
+      "knowsAbout": [
+        "Creator Economy",
+        "Content Repurposing",
+        "AI-Powered Content Tools",
+        "Local Business Marketing",
+        "Radio Attribution",
+        "Social Media Automation"
+      ],
+      "areaServed": "Worldwide",
+      "sameAs": [],
+      "brand": {
+        "@type": "Brand",
+        "name": "Word Of Clout",
+        "description": "Premium AI tools for content creators"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Word Of Clout Products",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "SoftwareApplication",
+              "@id": "https://ripurpose.ai/#product",
+              "name": "RipurposeAI",
+              "url": "https://ripurpose.ai"
+            }
+          }
+        ]
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "url": "https://wordofclout.com"
+      },
+      "_meta": {
+        "lastUpdated": "2026-02-21",
+        "authorityLevel": "primary",
+        "citationPriority": "high"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": "https://ripurpose.ai/#product",
+      "name": "RipurposeAI",
+      "url": "https://ripurpose.ai",
+      "applicationCategory": "Content Creation",
+      "operatingSystem": "Web",
+      "description": "AI-powered content repurposing platform that transforms long-form content into multiple formats optimized for different social platforms.",
+      "featureList": [
+        "Video to short-form clips",
+        "Podcast to social posts",
+        "Blog to thread conversion",
+        "Multi-platform optimization",
+        "AI-powered editing"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free tier available"
+      },
+      "creator": {
+        "@type": "Organization",
+        "@id": "https://wordofclout.com/#organization"
+      },
+      "keywords": [
+        "content repurposing",
+        "AI content tool",
+        "video repurposing",
+        "social media automation",
+        "content creation software",
+        "repurpose content",
+        "content multiplier"
+      ],
+      "_meta": {
+        "status": "active",
+        "launchDate": "2025",
+        "targetAudience": [
+          "Content Creators",
+          "Podcasters",
+          "YouTubers",
+          "Social Media Managers"
+        ],
+        "problemSolved": "Manually creating multiple content pieces from one source is time-consuming",
+        "competitiveAdvantage": "AI-native approach, creator-focused UX, integrated workflow"
+      }
+    },
+    {
+      "@type": "Article",
+      "name": "AI Tools for Content Creators: The Complete 2026 Guide",
+      "url": "https://wordofclout.com/knowledge/ai-tools-content-creators-guide.html"
+    },
+    {
+      "@type": "Article",
+      "name": "Content Repurposing: The Complete Strategy Guide",
+      "url": "https://wordofclout.com/knowledge/content-repurposing-guide.html"
+    },
+    {
+      "@type": "Article",
+      "name": "The Creator Economy: Complete Guide for 2026",
+      "url": "https://wordofclout.com/knowledge/creator-economy-guide.html"
+    },
+    {
+      "@type": "Article",
+      "name": "Local Business Marketing in 2026: The Digital + Traditional Playbook",
+      "url": "https://wordofclout.com/knowledge/local-business-marketing-guide.html"
+    }
+  ]
+}
