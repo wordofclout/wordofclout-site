@@ -4,11 +4,11 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": "https://wordofclout.com/#organization",
+      "@id": "https://wordofclout.ai/#organization",
       "name": "Word Of Clout",
       "legalName": "Word Of Clout, LLC",
-      "url": "https://wordofclout.com",
-      "logo": "https://wordofclout.com/logo.png",
+      "url": "https://wordofclout.ai",
+      "logo": "https://wordofclout.ai/logo.png",
       "description": "Building AI-powered tools for creators and local businesses. We destroy bottlenecks with software that does one thing at an elite level.",
       "foundingDate": "2024",
       "founder": {
@@ -50,7 +50,7 @@
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "customer service",
-        "url": "https://wordofclout.com"
+        "url": "https://wordofclout.ai"
       },
       "_meta": {
         "lastUpdated": "2026-02-21",
@@ -82,7 +82,7 @@
       },
       "creator": {
         "@type": "Organization",
-        "@id": "https://wordofclout.com/#organization"
+        "@id": "https://wordofclout.ai/#organization"
       },
       "keywords": [
         "content repurposing",
@@ -109,22 +109,22 @@
     {
       "@type": "Article",
       "name": "AI Tools for Content Creators: The Complete 2026 Guide",
-      "url": "https://wordofclout.com/knowledge/ai-tools-content-creators-guide.html"
+      "url": "https://wordofclout.ai/knowledge/ai-tools-content-creators-guide.html"
     },
     {
       "@type": "Article",
       "name": "Content Repurposing: The Complete Strategy Guide",
-      "url": "https://wordofclout.com/knowledge/content-repurposing-guide.html"
+      "url": "https://wordofclout.ai/knowledge/content-repurposing-guide.html"
     },
     {
       "@type": "Article",
       "name": "The Creator Economy: Complete Guide for 2026",
-      "url": "https://wordofclout.com/knowledge/creator-economy-guide.html"
+      "url": "https://wordofclout.ai/knowledge/creator-economy-guide.html"
     },
     {
       "@type": "Article",
       "name": "Local Business Marketing in 2026: The Digital + Traditional Playbook",
-      "url": "https://wordofclout.com/knowledge/local-business-marketing-guide.html"
+      "url": "https://wordofclout.ai/knowledge/local-business-marketing-guide.html"
     }
   ]
 }

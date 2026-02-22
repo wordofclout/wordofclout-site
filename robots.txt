@@ -1,12 +1,12 @@
 # Word of Clout - Robots.txt
-# https://wordofclout.com
+# https://wordofclout.ai
 
 User-agent: *
 Allow: /
 Disallow: /api/
 
 # Sitemaps
-Sitemap: https://wordofclout.com/sitemap.xml
+Sitemap: https://wordofclout.ai/sitemap.xml
 
 # Crawl-delay for polite bots
 Crawl-delay: 1

@@ -2,11 +2,11 @@
   "company": {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "@id": "https://wordofclout.com/#organization",
+    "@id": "https://wordofclout.ai/#organization",
     "name": "Word Of Clout",
     "legalName": "Word Of Clout, LLC",
-    "url": "https://wordofclout.com",
-    "logo": "https://wordofclout.com/logo.png",
+    "url": "https://wordofclout.ai",
+    "logo": "https://wordofclout.ai/logo.png",
     "description": "Building AI-powered tools for creators and local businesses. We destroy bottlenecks with software that does one thing at an elite level.",
     "foundingDate": "2024",
     "founder": {
@@ -48,7 +48,7 @@
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "customer service",
-      "url": "https://wordofclout.com"
+      "url": "https://wordofclout.ai"
     },
     "_meta": {
       "lastUpdated": "2026-02-21",
@@ -82,7 +82,7 @@
         },
         "creator": {
           "@type": "Organization",
-          "@id": "https://wordofclout.com/#organization"
+          "@id": "https://wordofclout.ai/#organization"
         },
         "keywords": [
           "content repurposing",
