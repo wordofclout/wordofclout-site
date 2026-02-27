@@ -229,17 +229,49 @@
             background: var(--white);
         }
         .product-badge {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
             font-size: 0.65rem;
             font-weight: 700;
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            padding: 3px 8px;
+            padding: 3px 10px 3px 8px;
             background: #16A34A;
             color: var(--white);
             border-radius: 2px;
             margin-left: 12px;
             line-height: 1.6;
+        }
+        .product-badge .pulse-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--white);
+            border-radius: 50%;
+            animation: heartbeat 1.5s ease-in-out infinite;
+            box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+        }
+        @keyframes heartbeat {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            25% {
+                transform: scale(1.2);
+                box-shadow: 0 0 0 4px rgba(255, 255, 255, 0);
+            }
+            50% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
+            75% {
+                transform: scale(1.15);
+                box-shadow: 0 0 0 3px rgba(255, 255, 255, 0);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+            }
         }
         
         /* Insights */
@@ -389,11 +421,11 @@
                     <a href="#products" class="section-link">View all</a>
                 </div>
                 <a href="https://geoproof.ai" class="product-card flagship" target="_blank" rel="noopener">
-                    <div class="product-name">GeoProof <span class="product-badge">Live</span></div>
+                    <div class="product-name">GeoProof <span class="product-badge"><span class="pulse-dot"></span>Live</span></div>
                     <p class="product-desc">Find out if AI recommends your business. Free audit shows what ChatGPT and Perplexity say when customers search for your services.</p>
                 </a>
                 <a href="https://ripurpose.ai" class="product-card" target="_blank" rel="noopener">
-                    <div class="product-name">RipurposeAI</div>
+                    <div class="product-name">RipurposeAI <span class="product-badge"><span class="pulse-dot"></span>Live</span></div>
                     <p class="product-desc">Turn one YouTube video into 30 days of content. LinkedIn posts, X threads, TikTok scripts — written in your voice, not a robot's.</p>
                 </a>
             </div>
